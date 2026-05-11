@@ -41,6 +41,14 @@ common:
     url: https://www.ul.com/about/policies-statements/terms-of-use
   - type: Contact
     url: https://www.ul.com/contact-us
+  - type: Integrations
+    url: https://www.ul.com/resources/apps
+integrations:
+  - name: ULTRUS (mega menu) image.
+  - name: Delete this later
+  - name: Businesswoman using virtual visual screen
+  - name: Fire sprinkler head
+  - name: Spacings tool
 maintainers:
   - FN: API Evangelist
     url: https://apievangelist.com
