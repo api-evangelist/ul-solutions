@@ -1,0 +1,14 @@
+{
+  "repo": "ul-solutions",
+  "feeds": [
+    {
+      "source": "https://www.ul.com/news",
+      "feed_url": "https://www.ul.com/news",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 8
+}
