@@ -1,7 +1,11 @@
 aid: ul-solutions
+
 url: https://github.com/api-evangelist/ul-solutions
+
 name: UL Solutions
+
 type: Index
+
 deliveryModel:
   model: saas
   open_source: false
@@ -13,6 +17,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -24,59 +29,100 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://www.ul.com/favicon.ico
+
 tags:
-  - Safety Science
-  - Certification
-  - Testing
-  - Compliance
-  - Standards
-  - Inspection
+- Safety Science
+- Certification
+- Testing
+- Compliance
+- Standards
+- Inspection
+- Developer Portal
+
 description: UL Solutions is a global leader in applied safety science, providing testing, inspection, certification, advisory, and software solutions to help customers innovate safely, demonstrate compliance, and bring trusted products to market. The company offers software products such as ULTRUS and ComplianceWire, customer portals (myUL, Product iQ), and the Marks and Labels Hub. UL Solutions does not currently expose a public developer-facing API portal with open documentation.
+
 created: '2026-05-04'
-modified: '2026-05-04'
+
+modified: '2026-10-20'
+
 specificationVersion: '0.23'
-common:
-  - type: DomainSecurity
-    url: security/ul-solutions-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/ulsolutions
-  - type: Website
-    url: https://www.ul.com
-  - type: Portal
-    url: https://my.ul.com
-  - type: ProductIQ
-    url: https://productiq.ulprospector.com
-  - type: MarksAndLabelsHub
-    url: https://marks.ul.com
-  - type: Software
-    url: https://www.ul.com/software
-  - type: HelpCenter
-    url: https://www.ul.com/contact-us
-  - type: News
-    url: https://www.ul.com/news
-  - type: Careers
-    url: https://www.ul.com/about/careers
-  - type: InvestorRelations
-    url: https://investors.ul.com
-  - type: TrustCenter
-    url: https://www.ul.com/about/our-policies
-  - type: PrivacyPolicy
-    url: https://www.ul.com/about/policies-statements/online-privacy
-  - type: TermsOfService
-    url: https://www.ul.com/about/policies-statements/terms-of-use
-  - type: Contact
-    url: https://www.ul.com/contact-us
-  - type: Integrations
-    url: https://www.ul.com/resources/apps
-  - url: https://www.ul.com/news
-    type: Blog
-integrations:
-  - name: ULTRUS (mega menu) image.
-  - name: Delete this later
-  - name: Businesswoman using virtual visual screen
-  - name: Fire sprinkler head
-  - name: Spacings tool
+
 maintainers:
-  - FN: API Evangelist
-    url: https://apievangelist.com
+- FN: API Evangelist
+  url: https://apievangelist.com
+
+common:
+- type: LLMsTxt
+  url: llms/ul-solutions-llms.txt
+- type: Hosts
+  url: hosts/ul-solutions-hosts.yml
+- type: Vendors
+  url: vendors/ul-solutions-vendors.yml
+- type: DomainSecurity
+  url: security/ul-solutions-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ulsolutions
+- type: Website
+  url: https://www.ul.com
+- type: Portal
+  url: https://my.ul.com
+- type: ProductIQ
+  url: https://productiq.ulprospector.com
+- type: MarksAndLabelsHub
+  url: https://marks.ul.com
+- type: Software
+  url: https://www.ul.com/software
+- type: HelpCenter
+  url: https://www.ul.com/contact-us
+- type: News
+  url: https://www.ul.com/news
+- type: Careers
+  url: https://www.ul.com/about/careers
+- type: InvestorRelations
+  url: https://investors.ul.com
+- type: Contact
+  url: https://www.ul.com/contact-us
+- type: Integrations
+  url: https://www.ul.com/resources/apps
+- url: https://www.ul.com/news
+  type: Blog
+- type: DeveloperPortal
+  url: https://developer.ul.com/
+- type: Documentation
+  url: https://docs.ul.com/
+- type: PrivacyPolicy
+  url: https://www.ul.com/resources/online-policies/privacy-notice
+- type: TermsOfService
+  url: https://www.ul.com/resources/contracts/terms
+- type: Support
+  url: https://www.ul.com/resources/help
+- type: Login
+  url: https://my.ul.com/
+
+integrations:
+- name: ULTRUS (mega menu) image.
+- name: Delete this later
+- name: Businesswoman using virtual visual screen
+- name: Fire sprinkler head
+- name: Spacings tool
+
+x-coverage:
+  state: gated
+  reason: partner-login
+  detail: UL Solutions runs an Azure APIM developer portal at developer.ul.com whose anonymous catalog shows only the default Echo API, and every docs.ul.com page redirects to the login.ul.com Azure B2C sign-in.
+  evidence:
+  - url: https://docs.ul.com/docs/abstract
+    status: 200
+  - url: https://developer.ul.com/apis
+    status: 200
+  - url: https://docs.ul.com/docs/developer-portal-registration
+    status: 404
+  checked: '2026-10-20'
+
+x-enrichment:
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v5
